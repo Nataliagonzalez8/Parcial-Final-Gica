@@ -1,0 +1,130 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a{text-decoration:none;}
+
+
+body{min-height: 100vh; position: relative;}
+
+/* Menú */
+aside#menu {width: 290px; height: 100%; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: rgba(42, 46, 87, 0.9);}
+aside#menu a#abrir-menu {width: 30px; height: auto; margin: 0; float: none; position: absolute; top: 14px; left: -50px; display: block; text-decoration: none; color: #2a2e57; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;}
+aside#menu a#cerrar-menu {width: 30px; height: auto; margin: 0; float: none; position: absolute; top: 14px; left: -50px; display: none; text-decoration: none; color: #2a2e57; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;}
+aside#menu nav  {width: 60%; height: auto; margin: 15% auto; float: none; position: relative;}
+aside#menu nav a {width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in;}
+
+aside#menu nav a:hover{color: #f3e075; transition: all 0.3s ease-in;}
+
+/* Boton de Whatsapp */
+aside#boton-wp {float: none; width: 45px; height: 45px; display: block; margin: 0; position: fixed; right: 15px; bottom: 15px; z-index: 99998;}
+aside#boton-wp a {background: #00bb2d; float: none; width: 100%; height: auto; display: block; margin: 0; position: relative; border-radius: 50%; text-align: center; transition: 0.3s ease-in; padding: 10px 0;}
+aside#boton-wp a:hover {background: black; transition: 0.3s ease-in;}
+aside#boton-wp a i {font-size: 1.5em; line-height: 1em; color: #fff; transition: 0.3s ease-in;}
+aside#boton-wp a:hover i {color: #00bb2d; transition: 0.3s ease-in;}
+
+/* Header */
+header{float: none; position: relative; z-index: 9900; width: 100%; height: 80px; background-color: transparent;}
+header article {width: 90px; height: 70px; float: none; margin: 0 0 0 35px; padding: 5px 0;}
+header article a {width: 100px; height: 70px; float: none;}
+header article a img {height: 70px; width: auto; margin: 0 auto; float: none;}
+
+/* Main */
+main {width: 100%; height: auto; margin: 0 auto; float: none; position: relative;}
+
+/* Main - Nav */
+main nav#menu-productos{float: left; width: 20%; height:500px; z-index: 9999;}
+main nav#menu-productos ul{float: none; margin: 10px 20px; list-style: none; }
+main nav#menu-productos ul a{text-decoration: none; transition: ease-in all 0.3s;}
+main nav#menu-productos ul a li{font-size:2em; color: white; border-radius: 5px; border: solid 1px white; text-align:center; transition: ease-in all 0.3s; background-color:#e8d4bb; margin: 2.5px 0;}
+main nav#menu-productos ul a:hover li{background-color:#172b44;}
+/*main nav#menu-productos ul a:hover li{background-color:#bbcee7; color: #f3e075;} */
+
+/* Main Section */
+main section#productos{float: right; position: relative; width: 80%; height:auto; padding-bottom: 280px;}
+main section#productos div{float: none; position: relative; width: 100%; height: auto;}
+main section#productos h1{float: none; font-size:4em; padding: 10px 20px;}
+main section#productos article{float: left; position: relative; width:30%; height:350px; margin: 10px 1%;}
+main section#productos article img{width:100%; height:350px;}
+main section#productos article img:hover{width:101%; height:360px; position: absolute; top: -5px; left: 0;}
+main section#productos p{padding:0 20px;}
+main section#productos a#vermas-producto1{width: 200px; display:none; text-align: center; font-size: 1.5em; margin: 35px auto;}
+main section#productos a#vermas-producto2{width: 200px; display:none; text-align: center; font-size: 1.5em; margin: 35px auto;}
+main section#productos a#vermas-producto3{width: 200px; display:none; text-align: center; font-size: 1.5em; margin: 35px auto;}
+
+main section#productos a#vermas-producto1 button{float: none; position: relative; width: 200px; height: 65px; font-size: 1.1em; cursor: pointer; text-align: center; border: none; border-radius: 5px; background-color: #e8d4bb;}
+main section#productos a#vermas-producto2 button{float: none; position: relative; width: 200px; height: 65px; font-size: 1.1em; cursor: pointer; text-align: center; border: none; border-radius: 5px; background-color: #e8d4bb;}
+main section#productos a#vermas-producto3 button{float: none; position: relative; width: 200px; height: 65px; font-size: 1.1em; cursor: pointer; text-align: center; border: none; border-radius: 5px; background-color: #e8d4bb;}
+main section#productos a#vermas-producto1:hover button{background-color: #172b44; color: white;}
+main section#productos a#vermas-producto2:hover button{background-color: #172b44; color: white;}
+main section#productos a#vermas-producto3:hover button{background-color: #172b44; color: white;}
+
+
+/* Footer */
+footer {width: 100%; height: 200px; margin: 0 auto; float: none; position: absolute; bottom: 0; right: 0; background: #e8d4bb;}
+footer article {width: 242px; height: 170px; float: none; margin: 0 auto; padding: 15px 0;}
+footer article a {width: 100px; height: 170px; float: none;}
+footer article a img {height: 170px; width: auto; margin: 0 auto; float: none;}
+
+/* Separadores */
+.separador{clear: both;}
+
+/* Clases agregadas */
+.selected{background-color:#172b44 !important;}
+.menu-fixed{position: fixed; top: 10px; z-index: 9991;}
+.menu-relative{position: relative; top: 0;}
+.sticky{margin-top: 60px;}
+.no-sticky{margin-top: 0;}
+
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+        /* Main - Nav */
+        main nav#menu-productos{float: none; width: 100%; height:auto; margin: 0 auto; }
+        main nav#menu-productos ul{float: none; display: inline; margin: 0 auto; list-style: none; }
+        main nav#menu-productos ul a li{width: 25%; float: left; display: inline; border: none; border-radius: 0; margin: 0;}
+        main nav.menu-fixed{position: fixed; top: 0; }
+        main nav.menu-fixed ul a:last-child li{border-radius: 0 0 5px 0 !important;}
+        main nav.menu-fixed ul a:first-child li{border-radius: 0 0 0 5px !important;}
+        main nav.menu-relative{position: relative; top: 0;}
+
+        /* Main - Productos */
+        main section#productos h1{float: none; font-size:4em; padding: 20px 0; text-align: center;}
+        main section#productos{float: none; position: relative; width: 80%; height:auto; margin: 0 auto;}
+        main section#productos article{float: left; position: relative; width: 46%; height:350px; margin: 10px 2%;}
+}
+
+@media only screen and (max-width: 900px){
+    main section#productos article{height:250px;}
+    main section#productos article img{width:100%; height:250px;}
+    main section#productos article img:hover{height:260px;}
+}
+
+@media only screen and (max-width: 717px){
+    main nav#menu-productos ul a li{font-size:1.5em; padding: 5px 0;}
+    main nav.menu-fixed ul a:last-child li{border-radius: 0 0 5px 0 !important;}
+    main nav.menu-fixed ul a:first-child li{border-radius: 0 0 0 5px !important;}
+
+}   
+
+@media only screen and (max-width: 684px){
+    main section#productos{float: none; position: relative; width: 95%; height:auto; margin: 0 auto;}
+
+
+} 
+
+/* Móviles grandes */
+
+/* Móviles pequeños */  
+@media only screen and (max-width: 542px){
+    main nav#menu-productos ul a li{font-size:1em; padding: 10px 0;}
+    main nav.menu-fixed ul a:last-child li{border-radius: 0 0 5px 0 !important;}
+    main nav.menu-fixed ul a:first-child li{border-radius: 0 0 0 5px !important;}
+    
+}
+
+@media only screen and (max-width: 367px){
+    main nav#menu-productos ul a li{font-size:0.5em; padding: 15px 0;}
+    main nav.menu-fixed ul a:last-child li{border-radius: 0 0 5px 0 !important;}
+    main nav.menu-fixed ul a:first-child li{border-radius: 0 0 0 5px !important;}
+}

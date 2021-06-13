@@ -1,0 +1,104 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a{text-decoration:none;}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Gelato', sans-serif;}
+
+
+/* Menú */
+aside#menu {width: 290px; height: 100%; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: rgba(42, 46, 87, 0.9);}
+aside#menu a#abrir-menu {width: 30px; height: auto; margin: 0; float: none; position: absolute; top: 14px; left: -50px; display: block; text-decoration: none; color: #2a2e57; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;}
+aside#menu a#cerrar-menu {width: 30px; height: auto; margin: 0; float: none; position: absolute; top: 14px; left: -50px; display: none; text-decoration: none; color: #2a2e57; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;}
+aside#menu nav  {width: 60%; height: auto; margin: 15% auto; float: none; position: relative;}
+aside#menu nav a {width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in;}
+
+aside#menu nav a:hover{color: #f3e075; transition: all 0.3s ease-in;}
+
+/* Boton de Whatsapp */
+aside#boton-wp {float: none; width: 45px; height: 45px; display: block; margin: 0; position: fixed; right: 15px; bottom: 15px; z-index: 99998;}
+aside#boton-wp a {background: #00bb2d; float: none; width: 100%; height: auto; display: block; margin: 0; position: relative; border-radius: 50%; text-align: center; transition: 0.3s ease-in; padding: 10px 0;}
+aside#boton-wp a:hover {background: black; transition: 0.3s ease-in;}
+aside#boton-wp a i {font-size: 1.5em; line-height: 1em; color: #fff; transition: 0.3s ease-in;}
+aside#boton-wp a:hover i {color: #00bb2d; transition: 0.3s ease-in;}
+
+/* Header */
+header{float: none; position: fixed; z-index: 9900; width: 100%; height: 80px; background-color: transparent;}
+header article {width: 90px; height: 70px; float: none; margin: 0 0 0 35px; padding: 5px 0;}
+header article a {width: 100px; height: 70px; float: none;}
+header article a img {height: 70px; width: auto; margin: 0 auto; float: none;}
+
+
+/* Zona Slick Slider */
+main section#zona-slider {width: 100%; height: 100vh; margin: 0 auto 85px; float: none; position: relative;}
+main section#zona-slider article.slick-slider {width: 100%; height: 100vh; margin: 0 auto; float: none; position: relative;}
+main section#zona-slider article.slick-slider figure#slide-1 {width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url("img/slide-01.jpg") no-repeat center center; min-height: 100%; background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-2 {width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url("img/slide-02.jpg") no-repeat center center; min-height: 100%; background-size: cover;}
+main section#zona-slider article.slick-slider figure#slide-3 {width: 100%; height: 100vh; margin: 0; float: left; position: relative; background: url("img/slide-03.jpg") no-repeat center center; min-height: 100%; background-size: cover;}
+
+.slick-prev {left: 25px !important; z-index: 9 !important;}
+.slick-next {right: 25px !important; z-index: 9 !important;}
+
+
+/* Main */
+main section#about-us{float: none; position: relative; margin: 20px auto; width: 80%; height: auto;}
+main section#about-us article h1{text-align: center; margin: 20px 40px; font-size: 1.5em;}
+main section#about-us article#texto-about-us{float: left; position: relative; width: 50%; height: 250px;}
+main section#about-us article#texto-about-us p{margin: 44px 40px; text-align: justify;}
+main section#about-us article#img-about-us{float: left; position: relative; width: 50%; height: 250px;}
+main section#about-us article#img-about-us img{width: 100%; height: 250px;}
+
+
+main div#boton-productos{float: none; position: relative; width: 80%; height: auto; margin: 20px auto; text-align: center;}
+main div#boton-productos a{float: none; position: relative; width: 100%; height: auto; margin: 0 auto;}
+main div#boton-productos a:hover button{cursor: pointer; background-color: #172b44; color: white; transition: 0.15s ease-in all;}
+main div#boton-productos a button{float: none; position: relative; width: 320px; font-size: 1.1em; height: 65px; margin: 35px auto; text-align: center; border: none; border-radius: 5px; background-color: #e8d4bb;}
+
+
+.menu-fixed{position: fixed; top: 10px;}
+.menu-relative{position: relative; top: 0;}
+
+/* Footer */
+footer {width: 100%; height: 200px; margin: 80px auto 0; float: none; position: relative; top: 0; right: 0; background: #e8d4bb;}
+footer article {width: 242px; height: 170px; float: none; margin: 0 auto; padding: 15px 0;}
+footer article a {width: 100px; height: 170px; float: none;}
+footer article a img {height: 170px; width: auto; margin: 0 auto; float: none;}
+
+
+
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    /* Cambios Slick Slider */
+    main section#zona-slider {height: 50vh;}
+    main section#zona-slider article.slick-slider {height: 50vh;}
+    main section#zona-slider article.slick-slider figure#slide-1 {height: 50vh;}
+    main section#zona-slider article.slick-slider figure#slide-2 {height: 50vh;}
+    main section#zona-slider article.slick-slider figure#slide-3 {height: 50vh;}
+
+
+    /* Cambios Main */
+    main section#about-us article#texto-about-us{float: none; margin: 0 auto 35px; position: relative; width: 100%; height: auto;}
+    main section#about-us article#img-about-us{float: none;  position: relative; width: 100%; height: auto;}
+    main section#about-us article#img-about-us img{width: 100%; height: auto;}
+
+    main div#boton-productos{float: none; width: 40%; height: auto;}
+    main div#boton-productos a button{width: 100%; }
+
+
+}
+
+@media only screen and (max-width: 680px){
+    main div#boton-productos{float: none; width: 50%; height: auto;}
+    main div#boton-productos a button{width: 100%; }    
+
+}
+
+/* Móviles grandes */
+
+/* Móviles pequeños */  
+@media only screen and (max-width: 430px){
+        main div#boton-productos{float: none; width: 60%; height: auto;}
+        main div#boton-productos a button{width: 100%; }
+    }

@@ -1,0 +1,172 @@
+*{
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a{text-decoration:none;}
+
+/* Menú */
+aside#menu {width: 290px; height: 100%; margin: 0; float: none; position: fixed; right: -290px; top: 0; z-index: 99999; background: rgba(42, 46, 87, 0.9);}
+aside#menu a#abrir-menu {width: 30px; height: auto; margin: 0; float: none; position: absolute; top: 14px; left: -50px; display: block; text-decoration: none; color: #2a2e57; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;}
+aside#menu a#cerrar-menu {width: 30px; height: auto; margin: 0; float: none; position: absolute; top: 14px; left: -50px; display: none; text-decoration: none; color: #2a2e57; font-weight: 600; font-size: 2em; line-height: 1em; text-align: center; padding: 10px 0; border-radius: 5px 0 0 5px; transition: all 0.3s ease-in;}
+aside#menu nav  {width: 60%; height: auto; margin: 15% auto; float: none; position: relative;}
+aside#menu nav a {width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; transition: all 0.3s ease-in;}
+
+aside#menu nav a:hover{color: #f3e075; transition: all 0.3s ease-in;}
+
+/* Boton de Whatsapp */
+aside#boton-wp {float: none; width: 45px; height: 45px; display: block; margin: 0; position: fixed; right: 15px; bottom: 15px; z-index: 99998;}
+aside#boton-wp a {background: #00bb2d; float: none; width: 100%; height: auto; display: block; margin: 0; position: relative; border-radius: 50%; text-align: center; transition: 0.3s ease-in; padding: 10px 0;}
+aside#boton-wp a:hover {background: black; transition: 0.3s ease-in;}
+aside#boton-wp a i {font-size: 1.5em; line-height: 1em; color: #fff; transition: 0.3s ease-in;}
+aside#boton-wp a:hover i {color: #00bb2d; transition: 0.3s ease-in;}
+
+
+header{float: none; position: fixed; z-index: 9900; width: 100%; height: 80px; background-color: transparent;}
+header article {width: 90px; height: 70px; float: none; margin: 0 0 0 35px; padding: 5px 0;}
+header article a {width: 100px; height: 70px; float: none;}
+header article a img {height: 70px; width: auto; margin: 0 auto; float: none;}
+
+
+main h1{text-align: center; font-size: 2.7em; padding-top: 80px;}
+main section.producto{float: none; position: relative; display: block; width: 80%; height: 250px; margin: 30px auto;}
+main section.producto:last-child{float: none; position: relative; display: block; width: 80%; height: 250px; margin: 30px auto 0;}
+main section.producto figure{float: left; position: relative; display: inline; width: 30%; height: 250px;}
+main section.producto figure img{position: relative; width: 100%; height: 250px;}
+
+main section.producto article{float: left; position: relative; display: inline; width: 70%; height: 250px;}
+main section.producto article p{padding: 10px 0 10px 45px; text-align: justify;}
+main section.producto article p span{color: #c29f70; font-weight: 850;}
+main section.producto article h2{padding: 10px 0 0 45px; text-align: justify;}
+main section.producto article div.boton-comprar{margin: 10px auto; text-align: center;}
+main section.producto article div.boton-comprar button{cursor: pointer; padding: 10px 15px; background-color: #e8d4bb; border: none; border-radius: 5px;}
+main section.producto article div.boton-comprar a:hover button{background-color: #172b44; color: white;}
+
+
+
+
+/* Footer */
+footer {width: 100%; height: 200px; margin: 80px auto 0; float: none; position: relative; bottom: 0; right: 0; background: #e8d4bb;}
+footer article {width: 242px; height: 170px; float: none; margin: 0 auto; padding: 15px 0;}
+footer article a {width: 100px; height: 170px; float: none;}
+footer article a img {height: 170px; width: auto; margin: 0 auto; float: none;} 
+
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    main section.producto{float: none; position: relative; display: block; width: 80%; height: auto; margin: 30px auto 60px;}
+    main section.producto:last-child{float: none; position: relative; display: block; width: 80%; height: auto; margin: 30px auto 0;}
+    main section.producto figure{float: none; display: block; width: 100%; height: 600px;}
+    main section.producto figure img{position: relative; width: 100%; height: 600px;}
+    main section.producto article{float: none; display: block; width: 100%; height: auto;}
+
+main section.producto article h2{text-align: center; padding: 10px 0;}
+main section.producto article p{padding: 0; text-align: center ;}
+
+main section.producto article div.boton-comprar{margin: 10px auto; text-align: center;}
+main section.producto article div.boton-comprar button{cursor: pointer; padding: 10px 15px; background-color: #e8d4bb; border: none; border-radius: 5px;}
+main section.producto article div.boton-comprar a:hover button{background-color: #172b44; color: white;}
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* Thanks Page */
+body#thanks{background-color: #e8d4bb;}
+body#thanks main{width: 100%;}
+body#thanks main section#shop-image{width: 20%; height: 300px; margin: 120px auto 0;}
+body#thanks main section#shop-image img{width: 100%; height: 300px; margin: 0 auto;}
+body#thanks main section#shop-text{}
+body#thanks main section#shop-text h1{padding: 40px 0 0; color: white;}
+
+
+@media only screen and (max-width: 1210px){
+    body#thanks main{width: 100%; margin: 0 auto;}
+    body#thanks main section#shop-image{width: 22% !important;}
+}
+
+@media only screen and (max-width: 1140px){
+    body#thanks main section#shop-image{width: 24% !important;}
+}
+
+@media only screen and (max-width: 920px){
+    body#thanks main section#shop-image{width: 26% !important;}
+}
+
+@media only screen and (max-width: 860px){
+    body#thanks main section#shop-image{width: 28% !important;}
+}
+
+@media only screen and (max-width: 805px){
+    body#thanks main section#shop-image{width: 30% !important;}
+}
+
+@media only screen and (max-width: 737px){
+    body#thanks main section#shop-image{width: 32% !important;}
+}
+
+@media only screen and (max-width: 718px){
+    body#thanks main section#shop-image{width: 34% !important;}
+}
+
+@media only screen and (max-width: 682px){
+    body#thanks main section#shop-image{width: 36% !important;}
+}
+
+@media only screen and (max-width: 652px){
+    body#thanks main section#shop-image{width: 38% !important;}
+}
+
+@media only screen and (max-width: 622px){
+    body#thanks main section#shop-image{width: 40% !important;}
+}
+
+
+@media only screen and (max-width: 592px){
+    body#thanks main section#shop-image{width: 42% !important;}
+}
+
+@media only screen and (max-width: 562px){
+    body#thanks main section#shop-image{width: 44% !important;}
+}
+
+@media only screen and (max-width: 532px){
+    body#thanks main section#shop-image{width: 46% !important;}
+}
+
+@media only screen and (max-width: 502px){
+    body#thanks main section#shop-image{width: 48% !important;}
+}
+
+@media only screen and (max-width: 472px){
+    body#thanks main section#shop-image{width: 50% !important;}
+}
+
+@media only screen and (max-width: 442px){
+    body#thanks main section#shop-image{width: 52% !important;}
+}
+
+@media only screen and (max-width: 412px){
+    body#thanks main section#shop-image{width: 54% !important;}
+}
+
+@media only screen and (max-width: 382px){
+    body#thanks main section#shop-image{width: 56% !important;}
+}
+
+@media only screen and (max-width: 350px){
+    body#thanks main section#shop-image{width: 58% !important;}
+}
+
+@media only screen and (max-width: 320px){
+    body#thanks main section#shop-image{width: 60% !important;}
+}
+
+@media only screen and (max-width: 290px){
+    body#thanks main section#shop-image{width: 62% !important;}
+}
